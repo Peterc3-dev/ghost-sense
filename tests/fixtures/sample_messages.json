@@ -1,0 +1,59 @@
+[
+    {
+        "id": "casual_01",
+        "text": "yo bruh ngl that shit was mid lmao",
+        "expected": {
+            "register.slang_ratio": {"min": 0.4, "max": 1.0},
+            "register.formality_score": {"min": 0.0, "max": 0.45}
+        }
+    },
+    {
+        "id": "casual_02",
+        "text": "lol idk man prolly gonna just chill tbh",
+        "expected": {
+            "register.slang_ratio": {"min": 0.5, "max": 1.0},
+            "register.formality_score": {"min": 0.0, "max": 0.45}
+        }
+    },
+    {
+        "id": "technical_01",
+        "text": "The exponential decay function applies a configurable lambda parameter per dimension, ensuring that stale observations gracefully lose influence over the composite state vector.",
+        "expected": {
+            "register.slang_ratio": {"min": 0.0, "max": 0.05},
+            "register.avg_word_length": {"min": 5.0, "max": 10.0},
+            "register.formality_score": {"min": 0.55, "max": 1.0}
+        }
+    },
+    {
+        "id": "technical_02",
+        "text": "We should implement the abstract base class with a consistent interface: extract accepts a message string and metadata dictionary, returning a typed list of SignalEvent instances.",
+        "expected": {
+            "register.slang_ratio": {"min": 0.0, "max": 0.05},
+            "register.formality_score": {"min": 0.55, "max": 1.0}
+        }
+    },
+    {
+        "id": "mixed_01",
+        "text": "ok so the StateVector implementation looks solid but ngl the decay math is kinda sus, we should double check the lambda values",
+        "expected": {
+            "register.slang_ratio": {"min": 0.1, "max": 0.4},
+            "register.formality_score": {"min": 0.3, "max": 0.65}
+        }
+    },
+    {
+        "id": "terse_01",
+        "text": "k",
+        "expected": {
+            "register.slang_ratio": {"min": 0.8, "max": 1.0},
+            "register.sentence_count": {"min": 1.0, "max": 1.0}
+        }
+    },
+    {
+        "id": "emoji_heavy",
+        "text": "lmaooo yooo thats fire :D :) XD",
+        "expected": {
+            "register.emoji_density": {"min": 0.2, "max": 1.0},
+            "register.formality_score": {"min": 0.0, "max": 0.65}
+        }
+    }
+]
