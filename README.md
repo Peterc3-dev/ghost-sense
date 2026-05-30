@@ -93,13 +93,16 @@ To produce the hidden preamble / routing hint from a state vector, see
 
 ## Tests
 
-The tests use `pytest` (not currently declared as a dependency — install it
-separately):
+The tests use `pytest`, declared as the `test` extra:
 
 ```bash
-pip install pytest
+pip install -e ".[test]"
 pytest
 ```
+
+Continuous integration (`.github/workflows/ci.yml`) runs `ruff check .` and the
+test suite on Python 3.11 and 3.12. The whole suite is standard-library only —
+no GPU, model weights, or network access required.
 
 ## Limitations
 

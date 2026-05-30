@@ -3,7 +3,7 @@
 import time
 
 from ghost_sense.accumulator.state_store import StateStore
-from ghost_sense.models import FieldState, SignalEvent, SignalType
+from ghost_sense.models import SignalEvent, SignalType
 
 
 class TestStateStore:

@@ -12,9 +12,8 @@ The select_probes() function returns 0–2 candidates max, respecting cooldowns.
 from __future__ import annotations
 
 import time
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 
-from ghost_sense.config import CONFIDENCE_THRESHOLD
 from ghost_sense.models import StateVector
 
 

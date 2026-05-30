@@ -1,10 +1,15 @@
 """Tests for preamble generation and adapter output format."""
 
-import pytest
 
 from ghost_sense.accumulator.trend import Trend, TrendDirection
-from ghost_sense.conditioner.adapters.boo2 import format_boo2_system_message, format_boo2_with_base_prompt
-from ghost_sense.conditioner.adapters.claude import format_claude_api_messages, format_claude_system_prompt
+from ghost_sense.conditioner.adapters.boo2 import (
+    format_boo2_system_message,
+    format_boo2_with_base_prompt,
+)
+from ghost_sense.conditioner.adapters.claude import (
+    format_claude_api_messages,
+    format_claude_system_prompt,
+)
 from ghost_sense.conditioner.preamble import (
     PREAMBLE_FOOTER,
     PREAMBLE_HEADER,

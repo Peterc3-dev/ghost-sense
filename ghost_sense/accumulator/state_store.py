@@ -8,7 +8,12 @@ import time
 from pathlib import Path
 
 from ghost_sense.accumulator.decay import apply_decay, merge_with_decay
-from ghost_sense.accumulator.trend import Trend, compute_all_trends, cache_trends, load_cached_trends
+from ghost_sense.accumulator.trend import (
+    Trend,
+    cache_trends,
+    compute_all_trends,
+    load_cached_trends,
+)
 from ghost_sense.config import CONFIDENCE_THRESHOLD, get_lambda
 from ghost_sense.models import FieldState, SignalEvent, SignalType, StateVector
 

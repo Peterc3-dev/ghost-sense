@@ -2,8 +2,6 @@
 
 import time
 
-import pytest
-
 from ghost_sense.models import FieldState, SignalType, StateVector
 from ghost_sense.routing.cin_feedback import (
     CINRoutingHint,
