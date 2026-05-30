@@ -2,8 +2,6 @@
 
 import math
 
-import pytest
-
 from ghost_sense.accumulator.decay import (
     apply_decay,
     apply_decay_for_dimension,

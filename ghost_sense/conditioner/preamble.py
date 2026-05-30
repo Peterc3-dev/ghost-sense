@@ -9,10 +9,10 @@ Output is a structured text block that gets prepended to the system prompt.
 
 from __future__ import annotations
 
-from ghost_sense.accumulator.trend import Trend, TrendDirection
+from ghost_sense.accumulator.trend import Trend
 from ghost_sense.config import CONFIDENCE_THRESHOLD
 from ghost_sense.harvester.prompts import ProbeCandidate
-from ghost_sense.models import FieldState, StateVector
+from ghost_sense.models import StateVector
 
 # Thresholds for interpretation
 SLEEP_DEFICIT_THRESHOLD = 0.4

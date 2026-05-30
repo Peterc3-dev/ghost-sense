@@ -8,7 +8,7 @@ trigger absence signals.
 from __future__ import annotations
 
 import time
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 
 from ghost_sense.config import ABSENCE_CALIBRATION_HOURS
 from ghost_sense.extractor.base import BaseExtractor

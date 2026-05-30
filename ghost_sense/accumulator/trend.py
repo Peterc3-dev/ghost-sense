@@ -50,7 +50,7 @@ def _linear_regression(xs: list[float], ys: list[float]) -> tuple[float, float]:
 
     sum_x = sum(xs)
     sum_y = sum(ys)
-    sum_xy = sum(x * y for x, y in zip(xs, ys))
+    sum_xy = sum(x * y for x, y in zip(xs, ys, strict=True))
     sum_x2 = sum(x * x for x in xs)
 
     denom = n * sum_x2 - sum_x * sum_x
